@@ -1,0 +1,15 @@
+[default]
+region = us-east-1
+saml_provider = forgerock
+saml_auth_url = https://identity-internal.pearson.com/auth/json/realms/pearson/authenticate
+saml_username = UGALLDY
+output = json
+
+
+
+[profile citeviwer-sand]
+region = us-east-1
+source_profile = prod
+role_arn = arn:aws:iam::992567842996:role/user/account/PCMPowerUser
+#role_session_name = PCMPowerUser
+#mfa_serial = arn:aws:iam::992567842996:mfa/dylan.galland@pearson.com
